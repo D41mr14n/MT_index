@@ -1,4 +1,12 @@
-table {
-    border: 2px solid;
+table{
+    border: 2px solid blue;
     
   }
+.boxStyle{
+  width: 100px;
+  padding: 100px;
+  background: rgba(41, 103, 184, 0.2);
+}
+h1{
+  font-size: 50px;
+}

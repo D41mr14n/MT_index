@@ -4,26 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>TRELO </title>
+    <title>Trello - Home</title>
 </head>
 <body>
   <nav>
-    <a href="#"><img src="https://labyes.com/wp-content/uploads/2020/07/06Jul_LabyesNotaWeb-600x401.png" alt="gatito mirando atento"></a>
-    <ul>
+    <div class="content__logo">
+      <a href="#" class="logo__img"><img src="https://labyes.com/wp-content/uploads/2020/07/06Jul_LabyesNotaWeb-600x401.png" alt="gato mirando atento"></a>
+    </div>
+    <ul class="content__paginas">
       <li> <a href="#">Home</a></li>
-      <li> <a href="#">Compartir</a></li>
-      <li> <a href="#">Nosotros</a></li>
+      <li> <a href="#">Plantillas</a></li>
+      <li> <a href="#">Consejos</a></li>
+      <li> <a href="#" class="modo">🌜</a></li>
     </ul>
   </nav>
+
   <main>
-   <section>
-    <h1> Trello</h1>
-    <h2>Organiza tu dia con una lista de tareas</h2>
+   <section class="content__tablero">
+   
+    <section class="tablero__header">
+      <input type="text" placeholder="Definí el titulo">
+      <select name="" id="">
+        <option >Tarea</option>
+        <option >Lista</option>
+      </select>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star btn__star" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+        </svg>
+      </span>
+    </section>
+
+    <section class="body__tablero">
+      <article class="tablero__lista">
+        <div class="lista__nombre">
+          <input type="text"> Soy una lista
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+            </svg>
+          </span>
+        </div>
+        <div class="lista__tareas"></div>
+      </article>
+    </section>
+
    </section>
   </main>
-  <footer>
-    <p>By Amigos 2024</p>
-  </footer>
 
   <script src="js/index.js"></script>
 </body>
